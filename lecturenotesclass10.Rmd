@@ -78,8 +78,11 @@ marbles <- c("red", "red", "white", "red", "blue", "blue", "red", "blue")
 ```
 
 Suppose we draw a single marble from our imaginary box, where all the marbles
-are equally likely to be selected. What is the probability the marble is blue? 
+are equally likely to be selected. 
+What is the probability the marble is blue? 
+3/8, 0.375
 How about white?
+1/8, 0.125
 
 We can simulate this "drawing" with the `sample()` function.
 
@@ -106,6 +109,8 @@ prop.table(counts)
 ```
 
 How close is this value to the "true" probability?
+Close but not perfect, because you only drew the marble 10,000 times, not an
+infinite number of times, which would be needed to find the "true" probability.
 
 **To summarize our process:**
 
@@ -122,6 +127,7 @@ color if we make two draws with replacement? We haven't discussed how to
 compute this theoretically yet, but this is what computers are good at.
 
 Before we do this, what is your guess as to what the probability will be?
+Low probability, around 0.1 for blue, 0.25 for red, and 0.01 for white.
 
 We'll still use `sample()` to run our simulation many times, but we'll
 use `dplyr` functions to compute the relative frequencies.
