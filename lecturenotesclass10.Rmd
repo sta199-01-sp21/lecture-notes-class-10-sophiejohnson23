@@ -49,17 +49,22 @@ xtabs(~ Treatment + Improved, data = Arthritis) %>%
 ```
 
 - How many patients were enrolled in the clinical trial?
+84
 
 - What is the probability a randomly selected patient received the placebo?
+43/84, 0.5119048
 
 - What is the probability a randomly selected patient received the placebo
   and had a marked improvement?
+7/43, 0.1627907
   
 - What is the probability a randomly selected patient received the placebo
   and the treatment?
+0
   
 - What is the probability a randomly selected patient had some improvement or
   was on the treatment?
+48/84, 0.5714286
 
 ## Using computer simulations to calculate probabilities
 
