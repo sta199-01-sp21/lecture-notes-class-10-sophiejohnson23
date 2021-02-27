@@ -1,6 +1,6 @@
 ---
 title: "Introduction to probability"
-author: ""
+author: "Sophie Johnson"
 date: ""
 output: html_document
 editor_options: 
